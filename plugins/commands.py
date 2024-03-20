@@ -28,7 +28,7 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⭐ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⭐', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✨ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ 🤔', url="https://t.me/s3bbotsupport")
+                    InlineKeyboardButton('✨ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ 🤔', url="https://t.me/moiveadminsupport")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -45,10 +45,10 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⭐ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⭐', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ', url="https://t.me/s3bmoviesgroup"),
-                    InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url='https://t.me/s3bmovies')
+                    InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ', url="https://t.me/moivesadmingroup"),
+                    InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url='https://t.me/moiveadmin')
                 ],[              
-                    InlineKeyboardButton('🛑 ʜᴇʟᴘ & ꜱᴜᴘᴘᴏʀᴛ 👨🏻‍💻', url="https://t.me/s3bbotsupport")
+                    InlineKeyboardButton('🛑 ʜᴇʟᴘ & ꜱᴜᴘᴘᴏʀᴛ 👨🏻‍💻', url="https://t.me/moiveadminsupport")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -90,7 +90,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url='https://t.me/s3bbotsupport'
+                    "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url='https://t.me/moiveadmin'
                 )
             ]
         ]
@@ -112,10 +112,10 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⭐ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⭐', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ', url="https://t.me/s3bmoviesgroup"),
-                    InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url='https://t.me/s3bmovies')
+                    InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ', url="https://t.me/moivesadmingroup"),
+                    InlineKeyboardButton('ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ', url='https://t.me/moiveadmin')
                 ],[              
-                    InlineKeyboardButton('🛑 ʜᴇʟᴘ & ꜱᴜᴘᴘᴏʀᴛ 👨🏻‍💻', url="https://t.me/s3bbotsupport")
+                    InlineKeyboardButton('🛑 ʜᴇʟᴘ & ꜱᴜᴘᴘᴏʀᴛ 👨🏻‍💻', url="https://t.me/moiveadminsupport")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -207,7 +207,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/s3bbotsupport') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/moiveadmin') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -226,7 +226,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/s3bbotsupport') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/moiveadmin') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -327,7 +327,7 @@ async def start(client, message):
                     ], [
                         InlineKeyboardButton('📁 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🤔', url=await get_tutorial(chat_id))
                     ], [
-                        InlineKeyboardButton('🔥 ᴊᴏɪɴ ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🤩', url="https://t.me/s3bmoviesgroup")                        
+                        InlineKeyboardButton('🔥 ᴊᴏɪɴ ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🤩', url="https://t.me/moivesadmingroup")                        
                     ]
                 ]
             )
@@ -365,7 +365,7 @@ async def start(client, message):
                     ], [
                         InlineKeyboardButton('📁 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🤔', url=await get_tutorial(chat_id))
                     ], [
-                        InlineKeyboardButton('🔥 ᴊᴏɪɴ ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🤩', url="https://t.me/s3bmoviesgroup")
+                        InlineKeyboardButton('🔥 ᴊᴏɪɴ ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🤩', url="https://t.me/moivesadmingroup")
                 ]]
             )
         )
@@ -419,7 +419,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/s3bbotsupport') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/moiveadmin') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -462,7 +462,7 @@ async def start(client, message):
                     ], [
                         InlineKeyboardButton('📁 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 🤔', url=await get_tutorial(chat_id))
                     ], [
-                        InlineKeyboardButton('🔥 ᴊᴏɪɴ ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🤩', url="https://t.me/s3bmoviesgroup")                            
+                        InlineKeyboardButton('🔥 ᴊᴏɪɴ ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ 🤩', url="https://t.me/moivesadmingroup")                            
                         ]
                     ]
                 )
@@ -497,7 +497,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/s3bbotsupport') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/moiveadmin') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -560,7 +560,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/s3bbotsupport') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/moiveadmin') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
