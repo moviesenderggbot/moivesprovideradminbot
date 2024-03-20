@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "7000353208:AAHMVBU2-XKLUVfL9YttkontF6qtSMo
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/e26d1139ad37d4dc5d8b9.jpg https://telegra.ph/file/25ca4c38c73e92ebdc85b.jpg https://telegra.ph/file/8c1701ed4dac45aae504a.jpg https://telegra.ph/file/484a17d920e90a6bf35ea.jpg https://telegra.ph/file/463054499350c9a356884.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://telegra.ph/file/a159db7769a88177d8183.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/85d361ab4cb6511006022.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/86b7b7e2aa7e38f328902.jpg")
@@ -105,7 +105,7 @@ if 'DYNO' in environ:
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else 's3bmovies-7a2c8c829ea1.herokuapp.com'
+FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else 'moviexyz-381e42b87680.herokuapp.com'
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
