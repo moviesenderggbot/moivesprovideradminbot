@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24491383'))
-API_HASH = environ.get('API_HASH', '78e18eba669cc519ffd7a3c89f9ed32a')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7100225446:AAGlKC6A3AMfRdwM0VNkyi1-1iIYDtWu92Q")
+API_ID = int(environ.get('API_ID', '22620068'))
+API_HASH = environ.get('API_HASH', '11e2c113078324f7e36688baa86c3911')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7147745789:AAELH6J679ECQioYrOR4m-fc3vaf4Ps9j8A")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -34,9 +34,9 @@ STREAM_API = (environ.get('STREAM_API', '4485b8ec340e0397a7c90b7b23ab10217966439
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/HowToOpenLinkHP/69'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1913676476').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002117179591').split()] #Channel id for auto indexing ( make sure bot is admin )
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1913676476').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6062527012').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002073934602').split()] #Channel id for auto indexing ( make sure bot is admin )
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6062527012').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '') #Channel / Group Id for force sub ( make sure bot is admin )
